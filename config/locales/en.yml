@@ -2,4 +2,65 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+
+  layouts:
+    application:
+      title: "Pragmatic Bookshelf"
+      home: "Home"
+      questions: "Questions"
+      news: "News"
+      contact: "Contact"
+
+  store:
+    index:
+      title_html: "Your Pragmatic Catalog"
+      add_html: "Add to Cart"
+
+  carts:
+    cart:
+      title: "Your Cart"
+      total: "Total"
+      checkout: "Checkout"
+      empty: "Empty cart"
+
+  orders:
+    new:
+      legend: "Please Enter Your Details"
+    form:
+      name: "Name"
+      address_html: "Address"
+      email: "E-mail"
+      pay_type: "Pay with"
+      pay_prompt_html: "Select a payment method"
+      submit: "Place Order"
+
+  thanks: "Thank you for your order"
+
+  activerecord:
+    models:
+      order: "order"
+    attributes:
+      order:
+        address: "Address"
+        name: "Name"
+        email: "E-mail"
+        pay_type: "Pay type"
+    errors:
+      messages:
+        inclusion: "is not included in the list"
+        blank: "can't be blank"
+  errors:
+    template:
+      body: "There are problems with the following fields:"
+      header:
+        one: "1 error prohibited this %{model} from being saved."
+        other: "%{count} errors prohibited this %{model} from being saved."
+
+  number:
+    currency:
+      format:
+        unit: "$"
+        precision: 2
+        separator: "."
+        delimiter: ","
+        format: "%u%n"
